@@ -1,0 +1,110 @@
+/* Card layout and animation */
+*{
+  font-family: 'Brush Script MT', cursive;
+}
+.card {
+  border: none;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card-img-top:hover {
+  transform: scale(1.05);
+}
+
+/* Card content */
+.card-body {
+  background: #fffdfb;
+  padding: 1.2rem;
+  border-top: 1px solid #f0f0f0;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+/* Buttons */
+.card .btn {
+  margin: 0.25rem 0.2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.card .btn-primary {
+  background-color: #ff6b6b;
+  border: none;
+}
+
+.card .btn-primary:hover {
+  background-color: #ff3e3e;
+  transform: scale(1.05);
+}
+
+.card .btn-secondary {
+  background-color: #f0ad4e;
+  border: none;
+}
+
+.card .btn-secondary:hover {
+  background-color: #ec971f;
+  transform: scale(1.05);
+}
+.bg-gradient-custom {
+  background: linear-gradient(90deg, #252424, #ff6600);
+}
+
+.navbar-brand {
+  font-family: 'Segoe UI', sans-serif;
+  letter-spacing: 1px;
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.05);
+}
+
+.nav-link {
+  font-size: 1rem;
+  margin-right: 1rem;
+  color: white !important;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #000 !important;
+  transform: scale(1.1);
+  text-decoration: underline;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
