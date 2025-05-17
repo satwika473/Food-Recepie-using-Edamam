@@ -106,8 +106,9 @@ function displayFavorites() {
 let favoritesButton = document.getElementById("favoritesButton");
 favoritesButton.addEventListener("click", displayFavorites);
 
-searchButton.addEventListener("click", async () => {
+searchButton.addEventListener("click", async (e) => {
     try {
+        e.preventDefault();
         recipes = searchInput.value;
         await foodData();
     } catch (error) {
